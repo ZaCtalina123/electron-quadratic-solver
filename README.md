@@ -2,7 +2,11 @@
 
 An interactive web application for solving quadratic equations with step-by-step solutions and beautiful mathematical formatting.
 
-![Quadratic Equation](https://latex.codecogs.com/svg.latex?\color{white}ax^2%20+%20bx%20+%20c%20=%200)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?\color{white}ax^2%20+%20bx%20+%20c%20=%200">
+  <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.latex?\color{black}ax^2%20+%20bx%20+%20c%20=%200">
+  <img alt="Quadratic Equation" src="https://latex.codecogs.com/svg.latex?ax^2%20+%20bx%20+%20c%20=%200">
+</picture>
 
 ## Features
 
@@ -76,7 +80,11 @@ electron-quadratic-solver/
 
 The solver uses the quadratic formula:
 
-![Quadratic Formula](https://latex.codecogs.com/svg.latex?\color{white}x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a})
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://latex.codecogs.com/svg.latex?\color{white}x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a}">
+  <source media="(prefers-color-scheme: light)" srcset="https://latex.codecogs.com/svg.latex?\color{black}x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a}">
+  <img alt="Quadratic Formula" src="https://latex.codecogs.com/svg.latex?x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a}">
+</picture>
 
 Features include:
 - Discriminant calculation
