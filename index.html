@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Решение квадратных уравнений</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="mathjax-config.js"></script>
+    <script src="assets/mathjax/es5/tex-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Решение квадратных уравнений</h1>
+        </div>
+
+        <div class="equation-display">
+            <p>Введите коэффициенты для уравнения:</p>
+            <p>\[ax^2 + bx + c = 0\]</p>
+        </div>
+        
+        <div class="input-grid">
+            <div class="form-group tooltip">
+                <label for="a">Коэффициент a:</label>
+                <input type="text" id="a" placeholder="Введите a" pattern="^-?\d*(\s\d+\/\d+)?$|^-?\d+\/\d+$" oninput="validateInput(this)">
+                <span class="tooltip-text">Коэффициент при x².</span>
+            </div>
+            
+            <div class="form-group tooltip">
+                <label for="b">Коэффициент b:</label>
+                <input type="text" id="b" placeholder="Введите b" pattern="^-?\d*(\s\d+\/\d+)?$|^-?\d+\/\d+$" oninput="validateInput(this)">
+                <span class="tooltip-text">Коэффициент при x.</span>
+            </div>
+            
+            <div class="form-group tooltip">
+                <label for="c">Коэффициент c:</label>
+                <input type="text" id="c" placeholder="Введите c" pattern="^-?\d*(\s\d+\/\d+)?$|^-?\d+\/\d+$" oninput="validateInput(this)">
+                <span class="tooltip-text">Свободный член.</span>
+            </div>
+        </div>
+        
+        <button onclick="solveEquation()">Решить уравнение</button>
+        
+        <div id="result"></div>
+        <div id="solution-steps" class="solution-steps"></div>
+    </div>
+
+    <script src="solver.js"></script>
+    <script>
+        function validateInput(input) {
+            input.value = input.value.replace(/[^0-9\-.,\s\/]/g, '');
+            input.value = input.value.replace(',', '.');
+        }
+    </script>
+</body>
+</html>

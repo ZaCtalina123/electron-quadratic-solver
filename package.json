@@ -1,0 +1,55 @@
+{
+  "name": "quadratic-equation-solver",
+  "version": "1.0.0",
+  "description": "Программа для решения квадратных уравнений",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.quadratic.solver",
+    "productName": "Quadratic Equation Solver",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "assets/**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64", "ia32"]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}-${arch}.exe"
+    },
+    "asar": true
+  },
+  "author": "ZA_CTALINA_123",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.5.0",
+    "electron-builder": "^22.14.13"
+  },
+  "dependencies": {
+    "mathjax": "^3.2.2"
+  }
+}
