@@ -2,7 +2,7 @@
 
 An interactive web application for solving quadratic equations with step-by-step solutions and beautiful mathematical formatting.
 
-![Quadratic Equation](https://latex.codecogs.com/svg.latex?ax^2%20+%20bx%20+%20c%20=%200)
+![Quadratic Equation](https://latex.codecogs.com/svg.latex?\color{white}ax^2%20+%20bx%20+%20c%20=%200)
 
 ## Features
 
@@ -76,7 +76,7 @@ electron-quadratic-solver/
 
 The solver uses the quadratic formula:
 
-![Quadratic Formula](https://latex.codecogs.com/svg.latex?x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a})
+![Quadratic Formula](https://latex.codecogs.com/svg.latex?\color{white}x%20=%20\frac{-b%20\pm%20\sqrt{b^2-4ac}}{2a})
 
 Features include:
 - Discriminant calculation
